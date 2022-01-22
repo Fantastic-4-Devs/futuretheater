@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: #9f1833;
+  min-height: 100vh;
+  background: linear-gradient(to top, #232526, #414345);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Curtains */
+.open {
+  position: fixed;
+  width: 150px;
+  padding: 20px 20px 17px;
+  color: #e4e4e4;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 1;
+  z-index: 10;
+}
+
+.curtain {
+  position: absolute;
+  top: -10%;
+  height: 120%;
+  width: 50%;
+  z-index: 1;
+  transition: all 3s ease-out 0s;
+  transform: rotate(0deg);
+}
+.curtain.-left {
+  left: 0px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #9f1833, #c04b4b, #9f1833), linear-gradient(to left, #bf4949, #8c0000, #bf4949);
+  background-size: 17% 17%, 14% 14%;
+}
+.curtain.-right {
+  right: 0px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #9f1833, #c04b4b, #9f1833), linear-gradient(to left, #bf4949, #8c0000, #bf4949);
+  background-size: 17% 17%, 14% 14%;
+}
+.open-curtains .curtain.-left {
+  left: -16%;
+  width: 10%;
+  transform: rotate(7deg);
+}
+.open-curtains .curtain.-right {
+  right: -16%;
+  width: 10%;
+  transform: rotate(-7deg);
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+body {
+  background-color: #111;
+  background-image: radial-gradient(#333, #111);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+  text-align: center;
+  width: 100vw;
+  font-weight: 700;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#fly-in {
+  font-size: 4em;
+  margin: 40vh auto;
+  height: 20vh; 
+  text-transform: uppercase;
+}
+
+#fly-in span {
+  display: block;
+  font-size: .4em;
+  opacity: .8;
+}
+
+#fly-in div {
+ position: fixed; 
+  margin: 2vh 0;
+  opacity: 0;
+  left: 10vw;
+  width: 80vw;
+  animation: switch 32s linear infinite;
+}
+
+#fly-in div:nth-child(2) { animation-delay: 4s}
+#fly-in div:nth-child(3) { animation-delay: 8s}
+#fly-in div:nth-child(4) { animation-delay: 12s}
+#fly-in div:nth-child(5) { animation-delay: 16s}
+#fly-in div:nth-child(6) { animation-delay: 20s}
+#fly-in div:nth-child(7) { animation-delay: 24s}
+#fly-in div:nth-child(8) { animation-delay: 28s}
+
+@keyframes switch {
+    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+    3% { opacity: 1;filter: blur(0); transform:scale(1)}
+    10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+    13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+    80% { opacity: 0}
+    100% { opacity: 0}
+}
