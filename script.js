@@ -1,5 +1,4 @@
 
-// A little jQuery to handle the toggling of the curtains
 $(document).ready(function() {
  
   
