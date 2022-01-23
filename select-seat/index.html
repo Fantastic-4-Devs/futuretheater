@@ -20,11 +20,11 @@
 				<div class="cube__side cube__side--back">
 					<div class="screen">
 						<div class="video">
-							<video width="1250" height="800" controls>
-								<source src="https://github.com/Fantastic-4-Devs/steel-the-show/blob/main/select-seat/media/rick-roll.mp4" type="video/mp4">
-					
-								Your browser does not support HTML video.
-							  </video>
+							<video class="video-player" src="media/rick-roll.mp4" preload="auto" poster="media/venom.jpg">
+								<source src="media/sintel.ogg" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="media/rick-roll.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+								<p>Sorry, but your browser does not support this video format.</p>
+							</video>
 							<button class="action action--play action--shown" aria-label="Play Video"></button>
 						</div>
 						<div class="intro intro--shown">
