@@ -31,7 +31,7 @@
 
 .cube__side--left,
 .cube__side--right {
-  background-image: url("bg.gif");
+  background-image: url("bg1.gif");
   width: 3000px;
   /* depth */
   height: 1000px;
@@ -46,7 +46,7 @@
 
 .cube__side--back {
   background-image: url("curtain.gif");
-  box-shadow: 0 0 0 1px #232325;
+  box-shadow: 0 0 0 1px #1515c5;
   -webkit-transform: translate3d(0, 0, -3000px);
   transform: translate3d(0, 0, -3000px);
 }
@@ -67,7 +67,7 @@
 }
 
 .cube__side--top {
-  background: #272729;
+  background: #e00d0d;
   -webkit-transform: rotate3d(1, 0, 0, 90deg) translate3d(0, -3000px, 0);
   transform: rotate3d(1, 0, 0, 90deg) translate3d(0, -3000px, 0);
   -webkit-transform-origin: 50% 0%;
